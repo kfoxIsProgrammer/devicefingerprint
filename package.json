@@ -9,6 +9,7 @@
   "author": "Kevin Fox",
   "license": "ISC",
   "dependencies": {
-    "clientjs": "^0.1.11"
+    "clientjs": "^0.1.11",
+    "express": "^4.17.1"
   }
 }
