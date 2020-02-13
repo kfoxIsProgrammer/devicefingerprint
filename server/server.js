@@ -20,5 +20,20 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
   app.post('/submit-form',function(request,response){
    console.log(request.body) 
    response.send("hi")
+
+
+
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'Foxer123',
+  database: 'myusers'
+});
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Connected!');
+});
+
 })
   
